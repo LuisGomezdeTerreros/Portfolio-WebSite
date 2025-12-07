@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     title: 'IMDB ANALYZER',
     description: 'A Java-based system for the massive processing of film data. It implements OOP architecture, Streams APIs, and complex data structures to filter and analyze metrics from over 1000 films.',
-    image: 'public/images/imbd-java.png', // Tienes que poner una foto (lee abajo mis consejos).
+    image: '/images/imbd-java.png', // Tienes que poner una foto (lee abajo mis consejos).
     tech: ['JAVA', 'JUNIT', 'OOP', 'STREAMS'],
     link: 'https://github.com/FP-22-23/java-term-project-LuisGomezdeTerreros', // Pon el link real
     color: 'bg-orange-200' // Rojo por Java
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: 'GAME SALES DATA',
     description: 'Python data analysis script. Processes global video game sales datasets to generate statistical reports, filter by region, and visualize market share with graphs.',
-    image: 'public/images/phyton.jpeg', // Tienes que poner una foto
+    image: '/images/phyton.jpeg', // Tienes que poner una foto
     tech: ['PYTHON', 'MATPLOTLIB', 'DATA ANALYSIS'],
     link: 'https://github.com/FP-22-23/term-project-LuisGomezdeTerreros', // Pon el link real
     color: 'bg-yellow-200' // Verde por Python (o amarillo)
@@ -45,7 +45,7 @@ const projects = [
     id: 5,
     title: 'NATURSUR COMMERCE',
     description: 'Full-stack platform combining e-commerce and appointment scheduling. Features a dynamic product catalog with infinite scroll, RESTful backend and Telegram Chatbot. Containerized with Docker and deployed on Render.',
-    image: 'public/images/natusur.png', // ¡Recuerda poner una foto en public/images!
+    image: '/images/natusur.png', // ¡Recuerda poner una foto en public/images!
     tech: ['DJANGO', 'PYTHON', 'DOCKER'],
     link: 'https://github.com/crigarmen1/PGPI-Natursur', 
     color: 'bg-green-200' // Verde porque es "Natur"-sur
@@ -53,7 +53,8 @@ const projects = [
   {
     id: 5,
     title: 'PORTFOLIO WEBSITE',
-description: 'The website you are currently browsing. A responsive SPA built with React and Vite, featuring a custom Neo-Brutalist design system, complex animations with Framer Motion, and serverless email integration via EmailJS.',    image: 'public/images/Aspect_ratio_-_4x3.svg.png', // ¡Recuerda poner una foto en public/images!
+    description: 'The website you are currently browsing. A responsive SPA built with React and Vite, featuring a custom Neo-Brutalist design system, complex animations with Framer Motion, and serverless email integration via EmailJS.',
+    image: '/images/Aspect_ratio_-_4x3.svg.png', // ¡Recuerda poner una foto en public/images!
     tech: ['TAILWIND', 'REACT', 'VITE'],
     link: '', 
     color: 'bg-purple-200' // Verde porque es "Natur"-sur

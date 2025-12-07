@@ -198,7 +198,7 @@ export default function Hero() {
 
             <a
 
-            href=""
+            href="curriculum.pdf"
 
             target="_blank"
 
