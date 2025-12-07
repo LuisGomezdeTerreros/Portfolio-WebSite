@@ -1,4 +1,5 @@
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
+import { SiGithub } from 'react-icons/si'
 
 
 const projects = [
@@ -45,15 +46,14 @@ const projects = [
     title: 'NATURSUR COMMERCE',
     description: 'Full-stack platform combining e-commerce and appointment scheduling. Features a dynamic product catalog with infinite scroll, RESTful backend and Telegram Chatbot. Containerized with Docker and deployed on Render.',
     image: 'public/images/natusur.png', // ¡Recuerda poner una foto en public/images!
-    tech: ['DJANGO', 'PYTHON', 'DOCKER', 'POSTGRES'],
+    tech: ['DJANGO', 'PYTHON', 'DOCKER'],
     link: 'https://github.com/crigarmen1/PGPI-Natursur', 
     color: 'bg-green-200' // Verde porque es "Natur"-sur
   },
   {
     id: 5,
     title: 'PORTFOLIO WEBSITE',
-    description: 'The website you are looking at rightnow 😉',
-    image: 'public/images/Aspect_ratio_-_4x3.svg.png', // ¡Recuerda poner una foto en public/images!
+description: 'The website you are currently browsing. A responsive SPA built with React and Vite, featuring a custom Neo-Brutalist design system, complex animations with Framer Motion, and serverless email integration via EmailJS.',    image: 'public/images/Aspect_ratio_-_4x3.svg.png', // ¡Recuerda poner una foto en public/images!
     tech: ['TAILWIND', 'REACT', 'VITE'],
     link: '', 
     color: 'bg-purple-200' // Verde porque es "Natur"-sur
@@ -112,21 +112,27 @@ export default function Projects() {
                         ))}
                     </div>
                     
-                    <h3 className="text-2xl font-black text-black uppercase leading-tight mb-2">
-                        {project.title}
-                    </h3>
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                        <h3 className="text-2xl font-black text-black uppercase leading-tight">
+                            {project.title}
+                        </h3>
+                        {project.link !== "" && (
+                            <a 
+                                href={project.link} 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-shrink-0 flex items-center gap-1.5 bg-black border-2 border-black px-2 py-1 hover:bg-white transition-colors group"
+                                title="Ver código en GitHub"
+                            >
+                                <span className="text-xs font-black text-white group-hover:text-black">CODE</span>
+                                <SiGithub className="w-4 h-4 text-white group-hover:text-black transition-colors"/>
+                            </a>
+                        )}
+                    </div>
                     <p className="text-sm font-medium text-black  leading-relaxed border-l-2 border-black pl-3">
                         {project.description}
                     </p>
                 </div>
-                {project.link !== "" && (
-                <div className="mt-6">
-                    <a href={project.link} className="block w-full text-center bg-black text-white font-bold py-3 border-2 border-black hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2 group">
-                        VER CÓDIGO 
-                        <ArrowTopRightOnSquareIcon className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"/>
-                    </a>
-                </div>
-                )}
               </div>
             </article>
           ))}
