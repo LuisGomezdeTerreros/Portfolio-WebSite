@@ -70,13 +70,13 @@ export default function About() {
                     </div>
 
                     <p className="text-base font-medium leading-relaxed mb-6">
-                        I am a Software Engineering student driven by <span className="bg-yellow-200 px-1 border border-black">problem-solving</span> and technology. 
-                        Organized, communicative, and highly motivated to start my professional career.
+                        Software Engineering student with a strong interest in the intersection of engineering and <span className="bg-yellow-200 px-1 border border-black">intelligent systems</span>.
+                        I enjoy turning complex problems into clean, practical solutions.
                     </p>
-                    
+
                     <p className="text-base font-medium leading-relaxed">
-                        I am looking for an <span className="font-bold underline decoration-4 decoration-blue-400">internships </span> 
-                        to demonstrate my commitment, work in a team, and grow under the mentorship of experienced professionals.
+                        Whether joining a team as a <span className="font-bold underline decoration-4 decoration-blue-400">developer</span> or
+                        deepening my expertise through research and study, I bring commitment, curiosity, and a drive to keep growing in fast-moving fields.
                     </p>
 
                     {/* Fun Stats / Tags */}

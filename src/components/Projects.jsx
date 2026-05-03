@@ -1,63 +1,60 @@
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { SiGithub } from 'react-icons/si'
 
 
 const projects = [
   {
     id: 1,
+    title: 'DOSIUSSMART',
+    description: 'Android app and Final Degree Project at Universidad de Sevilla. An intelligent glycemic management system for Type 1 diabetics that integrates continuous glucose monitor data from Abbott LibreLinkUp, with food logging, insulin tracking, and background sync.',
+    image: '/images/Dosius captura.png',
+    tech: ['KOTLIN', 'ANDROID', 'JETPACK COMPOSE'],
+    link: 'https://github.com/LuisGomezdeTerreros/DosiusSmart',
+    color: 'bg-cyan-200'
+  },
+  {
+    id: 2,
+    title: 'CURRENT CALENDAR',
+    description: 'Full-stack social calendar platform where users publish and follow public calendars, co-manage shared calendars, and discover nearby events via an interactive map powered by PostGIS. Features real-time in-event chat, RSVP, Google/Apple Calendar import, and tiered subscription plans.',
+    image: '/images/current4.png',
+    tech: ['REACT NATIVE', 'DJANGO', 'POSTGRESQL'],
+    link: 'https://github.com/Current-Calendar/app',
+    color: 'bg-purple-200'
+  },
+  {
+    id: 3,
+    title: 'FITSHUB',
+    description: 'Collaborative platform and repository of FITS models for astronomical databases. A fork of uvlhub.io integrating Zenodo dataset management and AstroPy capabilities, with Docker deployment and automated CI/CD pipelines.',
+    image: '/images/fitshub3.png',
+    tech: ['PYTHON', 'FLASK', 'DOCKER'],
+    link: 'https://github.com/egc-fitshub/fitshub',
+    color: 'bg-yellow-200'
+  },
+  {
+    id: 4,
+    title: 'NATURSUR COMMERCE',
+    description: 'Full-stack platform combining e-commerce and appointment scheduling. Features a dynamic product catalog with infinite scroll, RESTful backend and Telegram Chatbot. Containerized with Docker and deployed on Render.',
+    image: '/images/natusur.png',
+    tech: ['DJANGO', 'PYTHON', 'DOCKER'],
+    link: 'https://github.com/crigarmen1/PGPI-Natursur',
+    color: 'bg-green-200'
+  },
+  {
+    id: 5,
     title: 'DeliverUS',
     description: 'DeliverUS is a made-up company whose business is focused on delivering food from 3rd parties (restaurants) to customers. To this end, the needed software products were requested, which hopefully will boost the company.',
-    // Usa una imagen real o este placeholder de color sólido brutalista
-    image: '/images/deliverus.png', 
+    image: '/images/deliverus.png',
     tech: ['JAVASCRIPT', 'REACT'],
     link: '',
     color: 'bg-red-200'
   },
-  
   {
-    id: 2,
-    title: 'Video Miner',
+    id: 6,
+    title: 'VIDEO MINER',
     description: 'Project with the objective of creating a service that could implement the APIs of other videoplatforms like Youtube and Vimeo for the use of their data',
     image: '/images/videominer.jpg',
     tech: ['JAVA', 'POSTMAN', 'API'],
     link: '',
     color: 'bg-blue-200'
-  },
-  {
-    id: 3,
-    title: 'IMDB ANALYZER',
-    description: 'A Java-based system for the massive processing of film data. It implements OOP architecture, Streams APIs, and complex data structures to filter and analyze metrics from over 1000 films.',
-    image: '/images/imbd-java.png', // Tienes que poner una foto (lee abajo mis consejos).
-    tech: ['JAVA', 'JUNIT', 'OOP', 'STREAMS'],
-    link: 'https://github.com/FP-22-23/java-term-project-LuisGomezdeTerreros', // Pon el link real
-    color: 'bg-orange-200' // Rojo por Java
-  },
-  {
-    id: 4,
-    title: 'GAME SALES DATA',
-    description: 'Python data analysis script. Processes global video game sales datasets to generate statistical reports, filter by region, and visualize market share with graphs.',
-    image: '/images/phyton.jpeg', // Tienes que poner una foto
-    tech: ['PYTHON', 'MATPLOTLIB', 'DATA ANALYSIS'],
-    link: 'https://github.com/FP-22-23/term-project-LuisGomezdeTerreros', // Pon el link real
-    color: 'bg-yellow-200' // Verde por Python (o amarillo)
-  },
-  {
-    id: 5,
-    title: 'NATURSUR COMMERCE',
-    description: 'Full-stack platform combining e-commerce and appointment scheduling. Features a dynamic product catalog with infinite scroll, RESTful backend and Telegram Chatbot. Containerized with Docker and deployed on Render.',
-    image: '/images/natusur.png', // ¡Recuerda poner una foto en public/images!
-    tech: ['DJANGO', 'PYTHON', 'DOCKER'],
-    link: 'https://github.com/crigarmen1/PGPI-Natursur', 
-    color: 'bg-green-200' // Verde porque es "Natur"-sur
-  },
-  {
-    id: 5,
-    title: 'PORTFOLIO WEBSITE',
-    description: 'The website you are currently browsing. A responsive SPA built with React and Vite, featuring a custom Neo-Brutalist design system, complex animations with Framer Motion, and serverless email integration via EmailJS.',
-    image: '/images/Aspect_ratio_-_4x3.svg.png', // ¡Recuerda poner una foto en public/images!
-    tech: ['TAILWIND', 'REACT', 'VITE'],
-    link: '', 
-    color: 'bg-purple-200' // Verde porque es "Natur"-sur
   },
 ]
 

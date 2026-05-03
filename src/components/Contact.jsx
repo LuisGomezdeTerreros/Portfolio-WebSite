@@ -156,7 +156,7 @@ export default function Contact() {
 
                 <motion.a
 
-                    href="https://linkedin.com/in/luis-gómez"
+                    href="https://www.linkedin.com/in/luis-g%C3%B3mez-de-terreros-oramas-588757386/"
 
                     target="_blank"
 
